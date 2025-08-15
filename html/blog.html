@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - SympTrack</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Same CSS as other pages -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+      <section class="blog-section">
+        <h1>Our Blog</h1>
+        <p>
+          Read the latest articles on health, wellness, and medical tips from
+          SympTrack.
+        </p>
+
+        <div class="blog-list">
+          <!-- Blog Post 1 -->
+          <article class="blog-post">
+            <h2>How to Recognize Early Symptoms of Common Illnesses</h2>
+            <p class="date">Published on August 10, 2025</p>
+            <p>
+              Identifying early symptoms can help you take timely action. Learn
+              about common signs and when to seek help...
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+
+          <!-- Blog Post 2 -->
+          <article class="blog-post">
+            <h2>Top 10 Healthy Habits for a Strong Immune System</h2>
+            <p class="date">Published on August 2, 2025</p>
+            <p>
+              Your immune system is your body’s defense. Here’s how to
+              strengthen it with daily habits...
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+
+          <!-- Blog Post 3 -->
+          <article class="blog-post">
+            <h2>Why Regular Health Checkups are Important</h2>
+            <p class="date">Published on July 28, 2025</p>
+            <p>
+              Preventive health care is the best way to stay ahead of illnesses.
+              Here’s why you should schedule regular checkups...
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script>
+      // Load navbar into the placeholder
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

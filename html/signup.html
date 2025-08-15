@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SympTrack - Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <!-- Navigation Bar -->
+    <!-- <nav>
+        <div class="logo">SympTrack</div>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav> -->
+
+    <!-- Sign-Up Form -->
+    <div class="container">
+        <div class="box">
+            <h2>Create Account</h2>
+            <input type="text" id="fullname" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <button onclick="signup()">Sign Up</button>
+            <a href="login.html">Already have an account? Login</a>
+        </div>
+    </div>
+    <script>
+    // Load navbar into the placeholder
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+</script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SympTrack - Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+   <div id="navbar-placeholder"></div>
+    <!-- Navigation Bar -->
+
+    <!-- Login Form -->
+    <div class="container">
+      <div class="box">
+        <h2>Login to SympTrack</h2>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <a href="#">Forgot Password?</a>
+        <a href="signup.html">Don't have an account? Sign Up</a>
+      </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script>
+      // Load navbar into the placeholder
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
